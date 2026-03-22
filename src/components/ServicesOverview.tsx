@@ -1,28 +1,8 @@
 import { Heart, Users, Home, CircleDot } from "lucide-react";
 import RevealOnScroll from "@/components/RevealOnScroll";
+import { seoConfig } from "@/lib/config";
 
-const services = [
-  {
-    icon: Heart,
-    title: "Individual Therapy",
-    description: "A private space to explore your thoughts, process emotions, and build resilience at your own pace.",
-  },
-  {
-    icon: Users,
-    title: "Couples Counseling",
-    description: "Strengthen your connection, improve communication, and navigate challenges together.",
-  },
-  {
-    icon: Home,
-    title: "Family Therapy",
-    description: "Heal family dynamics, build understanding, and create a healthier home environment.",
-  },
-  {
-    icon: CircleDot,
-    title: "Group Sessions",
-    description: "Find support and shared understanding in a small, guided group setting.",
-  },
-];
+const iconMap: Record<string, any> = { Heart, Users, Home, CircleDot };
 
 const ServicesOverview = () => {
   return (
@@ -38,17 +18,20 @@ const ServicesOverview = () => {
         </RevealOnScroll>
 
         <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map((s, i) => (
-            <RevealOnScroll key={s.title} delay={i * 80}>
-              <div className="bg-card rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow duration-300 h-full">
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-5">
-                  <s.icon className="w-6 h-6 text-primary" />
+          {seoConfig.services.map((s, i) => {
+            const Icon = iconMap[s.icon] || Heart;
+            return (
+              <RevealOnScroll key={s.title} delay={i * 80}>
+                <div className="bg-card rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow duration-300 h-full">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-5">
+                    <Icon className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="font-heading text-xl font-semibold text-secondary mb-2">{s.title}</h3>
+                  <p className="font-body text-sm text-foreground/65 leading-relaxed text-pretty">{s.description}</p>
                 </div>
-                <h3 className="font-heading text-xl font-semibold text-secondary mb-2">{s.title}</h3>
-                <p className="font-body text-sm text-foreground/65 leading-relaxed text-pretty">{s.description}</p>
-              </div>
-            </RevealOnScroll>
-          ))}
+              </RevealOnScroll>
+            );
+          })}
         </div>
       </div>
     </section>

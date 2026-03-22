@@ -1,4 +1,5 @@
 import RevealOnScroll from "@/components/RevealOnScroll";
+import { seoConfig } from "@/lib/config";
 
 const ApproachSection = () => {
   return (
@@ -19,24 +20,11 @@ const ApproachSection = () => {
         </RevealOnScroll>
 
         <div className="mt-14 grid sm:grid-cols-3 gap-8 text-left">
-          {[
-            {
-              title: "Cognitive Behavioral Therapy",
-              desc: "Identifying and reshaping thought patterns that hold you back, building practical coping skills.",
-            },
-            {
-              title: "EMDR",
-              desc: "Processing trauma and difficult memories in a safe, structured way that helps your brain heal naturally.",
-            },
-            {
-              title: "Mindfulness-Based",
-              desc: "Building present-moment awareness and self-compassion to reduce stress and increase emotional resilience.",
-            },
-          ].map((item, i) => (
+          {seoConfig.approaches.map((item, i) => (
             <RevealOnScroll key={item.title} delay={120 + i * 80}>
               <div>
                 <h3 className="font-heading text-xl font-semibold text-secondary mb-2">{item.title}</h3>
-                <p className="font-body text-sm text-foreground/65 leading-relaxed text-pretty">{item.desc}</p>
+                <p className="font-body text-sm text-foreground/65 leading-relaxed text-pretty">{item.description}</p>
               </div>
             </RevealOnScroll>
           ))}

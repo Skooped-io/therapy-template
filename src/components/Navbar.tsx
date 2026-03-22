@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
+import { seoConfig } from "@/lib/config";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -17,7 +18,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto flex items-center justify-between h-16 px-6">
         <a href="#" className="font-heading text-2xl font-semibold text-secondary tracking-tight">
-          Sarah Mitchell
+          {seoConfig.ownerName}
           <span className="block text-xs font-body font-normal text-muted-foreground tracking-wide uppercase">
             Licensed Therapist
           </span>
@@ -65,8 +66,8 @@ const Navbar = () => {
           <Button variant="hero" size="lg" className="w-full" asChild>
             <a href="#contact">Book a Consultation</a>
           </Button>
-          <a href="tel:+15551234567" className="flex items-center gap-2 text-muted-foreground text-sm pt-2">
-            <Phone size={14} /> (555) 123-4567
+          <a href={seoConfig.phoneHref} className="flex items-center gap-2 text-muted-foreground text-sm pt-2">
+            <Phone size={14} /> {seoConfig.phone}
           </a>
         </div>
       )}
