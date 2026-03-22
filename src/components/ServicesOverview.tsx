@@ -1,6 +1,7 @@
 import { Heart, Users, Home, CircleDot } from "lucide-react";
+import { Link } from "react-router-dom";
 import RevealOnScroll from "@/components/RevealOnScroll";
-import { seoConfig } from "@/lib/config";
+import { seoConfig, slugify } from "@/lib/config";
 
 const iconMap: Record<string, any> = { Heart, Users, Home, CircleDot };
 
@@ -22,13 +23,16 @@ const ServicesOverview = () => {
             const Icon = iconMap[s.icon] || Heart;
             return (
               <RevealOnScroll key={s.title} delay={i * 80}>
-                <div className="bg-card rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow duration-300 h-full">
+                <Link
+                  to={`/services/${slugify(s.title)}`}
+                  className="block bg-card rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow duration-300 h-full"
+                >
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-5">
                     <Icon className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="font-heading text-xl font-semibold text-secondary mb-2">{s.title}</h3>
                   <p className="font-body text-sm text-foreground/65 leading-relaxed text-pretty">{s.description}</p>
-                </div>
+                </Link>
               </RevealOnScroll>
             );
           })}
