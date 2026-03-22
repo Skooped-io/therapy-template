@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 import RevealOnScroll from "@/components/RevealOnScroll";
+import { seoConfig } from "@/lib/config";
 
 const CTASection = () => {
   return (
@@ -19,14 +20,14 @@ const CTASection = () => {
         <RevealOnScroll delay={120}>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button variant="warm" size="xl" asChild>
-              <a href="mailto:sarah@example.com">Book a Consultation</a>
+              <a href={`mailto:${seoConfig.email}`}>Book a Consultation</a>
             </Button>
             <a
-              href="tel:+15551234567"
+              href={seoConfig.phoneHref}
               className="flex items-center gap-2 font-body text-dark-section-foreground/70 hover:text-dark-section-foreground transition-colors"
             >
               <Phone size={16} />
-              (555) 123-4567
+              {seoConfig.phone}
             </a>
           </div>
         </RevealOnScroll>

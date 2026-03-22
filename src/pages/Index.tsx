@@ -7,10 +7,12 @@ import WhatToExpect from "@/components/WhatToExpect";
 import Testimonials from "@/components/Testimonials";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 
 const Index = () => {
   return (
     <>
+      <SEOHead page="home" />
       <Navbar />
       <Hero />
       <ServicesOverview />

@@ -1,0 +1,123 @@
+{
+  "businessName": "Sarah Mitchell Therapy",
+  "ownerName": "Sarah Mitchell",
+  "credentials": "LPC",
+  "phone": "(555) 123-4567",
+  "phoneHref": "tel:+15551234567",
+  "email": "sarah@sarahmitchelltherapy.com",
+  "address": {
+    "street": "123 Healing Way, Suite 204",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97201",
+    "full": "123 Healing Way, Suite 204, Portland, OR 97201"
+  },
+  "serviceArea": "Portland, OR and surrounding areas",
+  "industry": "Therapy & Counseling",
+  "yearEstablished": "2012",
+  "licenseNumber": "",
+  "about": "I believe everyone deserves a space where they feel truly heard. With over 12 years of experience, I specialize in helping individuals navigate anxiety, depression, and major life transitions with compassion and evidence-based approaches.",
+  "aboutExtended": "My approach is warm, collaborative, and tailored to you. I draw from CBT, EMDR, and mindfulness-based techniques to help you build the tools you need — not just for today, but for the long run.",
+  "tagline": "Compassionate therapy for individuals, couples, and families. You don't have to do this alone.",
+  "hours": {
+    "weekdays": "Monday – Thursday: 9am – 6pm",
+    "friday": "Friday: 9am – 3pm",
+    "note": "Telehealth available"
+  },
+  "services": [
+    {
+      "title": "Individual Therapy",
+      "description": "A private space to explore your thoughts, process emotions, and build resilience at your own pace.",
+      "icon": "Heart"
+    },
+    {
+      "title": "Couples Counseling",
+      "description": "Strengthen your connection, improve communication, and navigate challenges together.",
+      "icon": "Users"
+    },
+    {
+      "title": "Family Therapy",
+      "description": "Heal family dynamics, build understanding, and create a healthier home environment.",
+      "icon": "Home"
+    },
+    {
+      "title": "Group Sessions",
+      "description": "Find support and shared understanding in a small, guided group setting.",
+      "icon": "CircleDot"
+    }
+  ],
+  "specialties": [
+    "Anxiety & Stress",
+    "Depression",
+    "Trauma & PTSD",
+    "Grief & Loss",
+    "Relationship Issues",
+    "Life Transitions",
+    "Self-Esteem",
+    "Burnout"
+  ],
+  "approaches": [
+    {
+      "title": "Cognitive Behavioral Therapy",
+      "description": "Identifying and reshaping thought patterns that hold you back, building practical coping skills."
+    },
+    {
+      "title": "EMDR",
+      "description": "Processing trauma and difficult memories in a safe, structured way that helps your brain heal naturally."
+    },
+    {
+      "title": "Mindfulness-Based",
+      "description": "Building present-moment awareness and self-compassion to reduce stress and increase emotional resilience."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Reach Out",
+      "description": "Send a message or call. There's no pressure — just a conversation to see if we're a good fit.",
+      "icon": "MessageCircle"
+    },
+    {
+      "title": "Initial Consultation",
+      "description": "A free 15-minute phone consultation where we'll talk about what's bringing you in and answer any questions.",
+      "icon": "CalendarCheck"
+    },
+    {
+      "title": "Begin Your Journey",
+      "description": "We'll start working together at your pace, in a space that feels safe and supportive.",
+      "icon": "Sprout"
+    }
+  ],
+  "testimonials": [
+    {
+      "text": "I was nervous to start therapy, but Sarah made me feel completely at ease from the very first session. She listened without judgment and helped me see things I couldn't on my own.",
+      "author": "— Former Client"
+    },
+    {
+      "text": "After years of putting it off, I finally reached out. It was one of the best decisions I've ever made. Sarah's approach is gentle but genuinely effective.",
+      "author": "— Former Client"
+    },
+    {
+      "text": "I didn't think therapy was 'for me,' but Sarah created a space where I felt safe enough to be honest. The tools I've gained have changed how I handle everything.",
+      "author": "— Former Client"
+    }
+  ],
+  "seo": {
+    "home": {
+      "title": "Sarah Mitchell | Therapy & Counseling in Portland",
+      "description": "Compassionate therapy in Portland. Individual, couples & family counseling. Anxiety, depression, trauma & more. Free consultation.",
+      "h1": "A Safe Space to Heal & Grow"
+    },
+    "about": {
+      "title": "About Sarah Mitchell | Therapy in Portland, OR",
+      "description": "Meet Sarah Mitchell, LPC — a licensed therapist in Portland offering compassionate, evidence-based counseling."
+    },
+    "services": {
+      "title": "Therapy Services | Sarah Mitchell Therapy",
+      "description": "Individual therapy, couples counseling, family therapy, and group sessions in Portland, OR."
+    },
+    "contact": {
+      "title": "Contact Sarah Mitchell | Portland Therapist",
+      "description": "Schedule a free consultation with Sarah Mitchell, LPC in Portland, OR. Call (555) 123-4567."
+    }
+  }
+}
